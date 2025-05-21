@@ -1,7 +1,6 @@
  "use client";
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone } from "lucide-react";
 import { motion } from "framer-motion";
@@ -81,7 +80,7 @@ export default function Home() {
               Since 2019, I have been offering specialized technology consulting and marketing solutions tailored to business professionals across Orange County. Whether you need expert advice on tech upgrades, strategic digital marketing, or focused IT support, I'm here to assist.
             </p>
             <p>
-              With a solid background in Technology Solutions & Business Optimization, I&apos;ve worked with real estate agents, finance professionals, and business owners to drive success. By implementing innovative technology and strategic marketing campaigns, I&apos;ve boosted sales, improved productivity, and enhanced online presence. My expertise spans advanced IT solutions, SEO strategies, and social media marketing and advertising.
+              With a solid background in Technology Solutions & Business Optimization, I have worked with real estate agents, finance professionals, and business owners to drive success. By implementing innovative technology and strategic marketing campaigns, I&apos;ve boosted sales, improved productivity, and enhanced online presence. My expertise spans advanced IT solutions, SEO strategies, and social media marketing and advertising.
             </p>
             <p>
               I&apos;m committed to delivering personalized, hands-on support throughout Orange County, ensuring your technology runs smoothly and your marketing strategies yield tangible results. In today’s competitive landscape, the right tech and marketing approach can make all the difference.
@@ -319,7 +318,7 @@ export default function Home() {
             rel="noopener noreferrer"
             aria-label="LinkedIn"
           >
-            <img
+            <Image
               src="https://skillicons.dev/icons?i=linkedin"
               alt="LinkedIn"
               width={24}
