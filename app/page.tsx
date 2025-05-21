@@ -1,5 +1,6 @@
-"use client";
+ "use client";
 import React from "react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone } from "lucide-react";
 import { motion } from "framer-motion";
@@ -21,7 +22,7 @@ export default function Home() {
       {/* Navigation */}
       <nav className="sticky top-0 bg-white shadow-sm z-10">
         <div className="relative max-w-6xl mx-auto px-6 py-4 flex justify-center">
-          <a
+          <Link
             href="/"
             className="absolute left-0 inline-flex items-center text-lg font-bold text-blue-600 hover:text-blue-800"
           >
@@ -31,7 +32,7 @@ export default function Home() {
               className="h-6 w-6 mr-2"
             />
             HallmarkOC
-          </a>
+          </Link>
           <div className="flex space-x-8">
             <a href="#about" className="hover:text-blue-600">About</a>
             <a href="#it-consulting" className="hover:text-blue-600">IT Consulting</a>
@@ -52,7 +53,7 @@ export default function Home() {
           Hallmark IT & Marketing Solutions
         </motion.h1>
         <p className="max-w-3xl mx-auto text-muted-foreground text-lg mb-4">
-          Since 2019, I’ve delivered custom tech and marketing services for business professionals across Orange County.
+          Since 2019, I&apos;ve delivered custom tech and marketing services for business professionals across Orange County.
         </p>
       
         <div className="mt-8 flex justify-center gap-4">
@@ -79,10 +80,10 @@ export default function Home() {
               Since 2019, I have been offering specialized technology consulting and marketing solutions tailored to business professionals across Orange County. Whether you need expert advice on tech upgrades, strategic digital marketing, or focused IT support, I'm here to assist.
             </p>
             <p>
-              With a solid background in Technology Solutions & Business Optimization, I’ve worked with real estate agents, finance professionals, and business owners to drive success. By implementing innovative technology and strategic marketing campaigns, I’ve boosted sales, improved productivity, and enhanced online presence. My expertise spans advanced IT solutions, SEO strategies, and social media marketing and advertising.
+              With a solid background in Technology Solutions & Business Optimization, I&apos;ve worked with real estate agents, finance professionals, and business owners to drive success. By implementing innovative technology and strategic marketing campaigns, I&apos;ve boosted sales, improved productivity, and enhanced online presence. My expertise spans advanced IT solutions, SEO strategies, and social media marketing and advertising.
             </p>
             <p>
-              I’m committed to delivering personalized, hands-on support throughout Orange County, ensuring your technology runs smoothly and your marketing strategies yield tangible results. In today’s competitive landscape, the right tech and marketing approach can make all the difference.
+              I&apos;m committed to delivering personalized, hands-on support throughout Orange County, ensuring your technology runs smoothly and your marketing strategies yield tangible results. In today’s competitive landscape, the right tech and marketing approach can make all the difference.
             </p>
             <p className="text-center font-semibold text-lg">
               Empowering Your Business with Technology + Strategy
@@ -194,7 +195,7 @@ export default function Home() {
                     <ul className="list-disc list-inside space-y-2">
                       <li>Open House Flyers – $35 Single-Sided / $45 Double-Sided</li>
                       <li>New Listing Flyers – $35 Single-Sided / $45 Double-Sided</li>
-                      <li>Property Postcards (9" x 6.5", 2-sided) – $35</li>
+                      <li>Property Postcards (9&quot; x 6.5&quot;, 2-sided) – $35</li>
                       <li>Social Media Digital Flyers – $35</li>
                     </ul>
                   </div>
@@ -226,7 +227,7 @@ export default function Home() {
               <ul className="list-disc list-inside space-y-2 mt-2">
                 <li>Open House Flyers – Bright high-quality designs for open houses – $35 Single‑Sided / $45 Double‑Sided</li>
                 <li>New Listing Flyers – Attractive, high-impact design to showcase the property – $35 Single‑Sided / $45 Double‑Sided</li>
-                <li>Property Postcards (9" W x 6.5" H, 2‑sided) – $35</li>
+                <li>Property Postcards (9&quot; W x 6.5&quot; H, 2‑sided) – $35</li>
                 <li>Social Media Digital Flyers – 1:1 ratio square images, perfect for social & digital marketing – $35</li>
                 <li>Changes & Revisions to Proof – $10</li>
                 <li className="italic">*Contact for printing options</li>
@@ -269,7 +270,7 @@ export default function Home() {
           Get In Touch
         </motion.h2>
         <p className="text-center text-gray-600 mb-8">
-          I’d love to hear from you directly. Feel free to reach out via email or phone.
+          I&apos;d love to hear from you directly. Feel free to reach out via email or phone.
         </p>
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           {/* Left: Image */}
