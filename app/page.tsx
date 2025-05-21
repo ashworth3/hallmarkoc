@@ -30,6 +30,8 @@ export default function Home() {
             <Image
               src="/flyer.png"
               alt="Logo"
+              width={24}
+              height={24}
               className="h-6 w-6 mr-2"
             />
             HallmarkOC
@@ -239,6 +241,8 @@ export default function Home() {
                     <Image
                       src="/FlyerFront.jpg"
                       alt="Example Flyer Front"
+                      width={300}
+                      height={400}
                       className="max-w-xs border rounded"
                     />
                     <span className="mt-2 text-sm font-medium">Front Side Example</span>
@@ -247,6 +251,8 @@ export default function Home() {
                     <Image
                       src="/FlyerBack.jpg"
                       alt="Example Flyer Back"
+                      width={300}
+                      height={400}
                       className="max-w-xs border rounded"
                     />
                     <span className="mt-2 text-sm font-medium">Back Side Example</span>
@@ -279,6 +285,8 @@ export default function Home() {
             <Image
               src="/computer.jpg"
               alt="Work setup"
+              width={400}
+              height={300}
               className="rounded shadow w-full max-w-md h-auto object-cover"
             />
           </div>
