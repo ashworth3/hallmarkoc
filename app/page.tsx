@@ -1,8 +1,9 @@
  "use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone } from "lucide-react";
+import { ImageDown, Mail, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -26,7 +27,7 @@ export default function Home() {
             href="/"
             className="absolute left-0 inline-flex items-center text-lg font-bold text-blue-600 hover:text-blue-800"
           >
-            <img
+            <Image
               src="/flyer.png"
               alt="Logo"
               className="h-6 w-6 mr-2"
@@ -235,7 +236,7 @@ export default function Home() {
               <div className="mt-6 bg-white rounded p-4 shadow-inner">
                 <div className="flex justify-center gap-6">
                   <div className="flex flex-col items-center">
-                    <img
+                    <Image
                       src="/FlyerFront.jpg"
                       alt="Example Flyer Front"
                       className="max-w-xs border rounded"
@@ -243,7 +244,7 @@ export default function Home() {
                     <span className="mt-2 text-sm font-medium">Front Side Example</span>
                   </div>
                   <div className="flex flex-col items-center">
-                    <img
+                    <Image
                       src="/FlyerBack.jpg"
                       alt="Example Flyer Back"
                       className="max-w-xs border rounded"
@@ -275,7 +276,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           {/* Left: Image */}
           <div className="flex justify-center">
-            <img
+            <Image
               src="/computer.jpg"
               alt="Work setup"
               className="rounded shadow w-full max-w-md h-auto object-cover"
