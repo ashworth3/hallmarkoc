@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
+import { Mail, Phone } from "lucide-react";
 
 export default function Home() {
   return (
