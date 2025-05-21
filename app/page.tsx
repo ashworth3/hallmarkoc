@@ -319,7 +319,7 @@ export default function Home() {
             rel="noopener noreferrer"
             aria-label="LinkedIn"
           >
-            <Image
+            <img
               src="https://skillicons.dev/icons?i=linkedin"
               alt="LinkedIn"
               width={24}
