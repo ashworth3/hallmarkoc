@@ -30,7 +30,7 @@ export default function Home() {
       <nav className="sticky top-0 bg-white shadow-sm z-10">
         <div className="relative max-w-6xl mx-auto px-6 py-4 flex justify-center">
           <Link
-            href="#home"
+            href="/"
             className="absolute left-0 inline-flex items-center text-lg font-bold text-blue-600 hover:text-blue-800"
           >
             <Image
