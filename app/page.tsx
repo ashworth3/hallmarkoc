@@ -1,5 +1,5 @@
- "use client";
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -8,8 +8,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone } from "lucide-react";
 
 export default function Home() {
+  useEffect(() => {
+    document.documentElement.style.scrollBehavior = "smooth";
+    return () => {
+      document.documentElement.style.scrollBehavior = "auto";
+    };
+  }, []);
   return (
-    <main className="min-h-screen bg-gray-50 text-gray-900 scroll-smooth">
+    <main className="min-h-screen bg-gray-50 text-gray-900">
       {/* Announcement Bar */}
       <div className="bg-blue-600 text-white text-sm py-2 text-center">
         Real Estate Flyer Designs Available Now!
@@ -24,7 +30,7 @@ export default function Home() {
       <nav className="sticky top-0 bg-white shadow-sm z-10">
         <div className="relative max-w-6xl mx-auto px-6 py-4 flex justify-center">
           <Link
-            href="/"
+            href="#"
             className="absolute left-0 inline-flex items-center text-lg font-bold text-blue-600 hover:text-blue-800"
           >
             <Image
