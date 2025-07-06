@@ -108,7 +108,7 @@ export default function Home() {
         )}
       </nav>
       {/* Hero / Home */}
-      <section id="home" className="py-20 px-4 text-center bg-blue-50">
+      <section id="home" className="min-h-125 py-20 px-4 flex flex-col justify-center text-center bg-blue-50">
         <motion.h1
           className="text-4xl md:text-5xl font-bold mb-4"
           initial={{ opacity: 0, y: -20 }}
