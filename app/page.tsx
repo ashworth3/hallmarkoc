@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -8,12 +8,15 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone } from "lucide-react";
 
 export default function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   useEffect(() => {
     document.documentElement.style.scrollBehavior = "smooth";
     return () => {
       document.documentElement.style.scrollBehavior = "auto";
     };
   }, []);
+
   return (
     <main className="min-h-screen bg-gray-50 text-gray-900">
       {/* Announcement Bar */}
@@ -28,10 +31,10 @@ export default function Home() {
       </div>
       {/* Navigation */}
       <nav className="sticky top-0 bg-white shadow-sm z-10">
-        <div className="relative max-w-6xl mx-auto px-6 py-4 flex justify-center">
+        <div className="relative w-full px-6 py-4 flex justify-between items-center">
           <Link
             href="/"
-            className="absolute left-0 inline-flex items-center text-lg font-bold text-blue-600 hover:text-blue-800"
+            className="inline-flex items-center text-lg font-bold text-blue-600 hover:text-blue-800"
           >
             <Image
               src="/flyer.png"
@@ -42,17 +45,70 @@ export default function Home() {
             />
             HallmarkOC
           </Link>
-          <div className="flex space-x-8">
-            <a href="#about" className="hover:text-blue-600">About</a>
-            <a href="#it-consulting" className="hover:text-blue-600">IT Consulting</a>
-            <a href="#marketing-seo" className="hover:text-blue-600">Marketing & SEO</a>
-            <a href="#real-estate-flyers" className="hover:text-blue-600">Flyers</a>
-            <a href="#contact" className="hover:text-blue-600">Contact</a>
+          {/* Hamburger Menu Button */}
+          <button
+            className="md:hidden text-blue-600 focus:outline-none"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+              />
+            </svg>
+          </button>
+          {/* Desktop Menu */}
+          <div className="hidden md:flex space-x-8">
+            <a href="#about" className="hover:text-blue-600">
+              About
+            </a>
+            <a href="#it-consulting" className="hover:text-blue-600">
+              IT Consulting
+            </a>
+            <a href="#marketing-seo" className="hover:text-blue-600">
+              Marketing & SEO
+            </a>
+            <a href="#real-estate-flyers" className="hover:text-blue-600">
+              Flyers
+            </a>
+            <a href="#contact" className="hover:text-blue-600">
+              Contact
+            </a>
           </div>
         </div>
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div className="md:hidden bg-white shadow-md">
+            <div className="flex flex-col space-y-4 px-6 py-4">
+              <a href="#about" className="hover:text-blue-600">
+                About
+              </a>
+              <a href="#it-consulting" className="hover:text-blue-600">
+                IT Consulting
+              </a>
+              <a href="#marketing-seo" className="hover:text-blue-600">
+                Marketing & SEO
+              </a>
+              <a href="#real-estate-flyers" className="hover:text-blue-600">
+                Flyers
+              </a>
+              <a href="#contact" className="hover:text-blue-600">
+                Contact
+              </a>
+            </div>
+          </div>
+        )}
       </nav>
       {/* Hero / Home */}
-      <section id="home" className="py-20 px-6 text-center bg-blue-50">
+      <section id="home" className="py-20 px-4 text-center bg-blue-50">
         <motion.h1
           className="text-4xl md:text-5xl font-bold mb-4"
           initial={{ opacity: 0, y: -20 }}
@@ -64,10 +120,13 @@ export default function Home() {
         <p className="max-w-3xl mx-auto text-muted-foreground text-lg mb-4">
           Since 2019, I&apos;ve delivered custom tech and marketing services for business professionals across Orange County.
         </p>
-      
         <div className="mt-8 flex justify-center gap-4">
-          <a href="#it-consulting"><Button>View Services</Button></a>
-          <a href="#contact"><Button variant="outline">Contact</Button></a>
+          <a href="#it-consulting">
+            <Button>View Services</Button>
+          </a>
+          <a href="#contact">
+            <Button variant="outline">Contact</Button>
+          </a>
         </div>
       </section>
       {/* Section Separator */}
