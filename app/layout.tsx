@@ -29,11 +29,18 @@ export const metadata: Metadata = {
     title: "HallmarkOC | IT & Marketing Solutions",
     description:
       "Tech & marketing solutions tailored for business professionals in Orange County. From IT support to SEO and real estate flyers.",
-    url: "https://hallmarkoc.vercel.app",
+    url: "https://hallmarkoc.com",
     siteName: "HallmarkOC",
     type: "website"
   },
-  metadataBase: new URL("https://hallmarkoc.vercel.app")
+  twitter: {
+  card: "summary_large_image",
+  title: "HallmarkOC | IT & Marketing Solutions",
+  description:
+    "Tech & marketing solutions tailored for business professionals in Orange County.",
+  images: ["https://hallmarkoc.com/computer.jpg"]
+  },
+  metadataBase: new URL("https://hallmarkoc.com")
 };
 
 export default function RootLayout({
