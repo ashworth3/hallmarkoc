@@ -73,8 +73,11 @@ export default function Home() {
             <a href="#it-consulting" className="hover:text-blue-600">
               IT Consulting
             </a>
-            <a href="#marketing-seo" className="hover:text-blue-600">
-              Marketing & SEO
+            <a href="#marketing" className="hover:text-blue-600">
+              Marketing
+            </a>
+            <a href="#web-development" className="hover:text-blue-600">
+              Web Development
             </a>
             <a href="#real-estate-flyers" className="hover:text-blue-600">
               Flyers
@@ -94,8 +97,11 @@ export default function Home() {
               <a href="#it-consulting" className="hover:text-blue-600">
                 IT Consulting
               </a>
-              <a href="#marketing-seo" className="hover:text-blue-600">
-                Marketing & SEO
+              <a href="#marketing" className="hover:text-blue-600">
+                Marketing
+              </a>
+              <a href="#web-development" className="hover:text-blue-600">
+                Web Development
               </a>
               <a href="#real-estate-flyers" className="hover:text-blue-600">
                 Flyers
@@ -117,8 +123,16 @@ export default function Home() {
         >
           Hallmark IT & Marketing Solutions
         </motion.h1>
+        <motion.p
+          className="text-lg font-medium text-blue-600 mb-2"
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          by Andre Ashworth
+        </motion.p>
         <p className="max-w-3xl mx-auto text-muted-foreground text-lg mb-4">
-          Since 2019, I&apos;ve delivered custom tech and marketing services for business professionals across Orange County.
+          Since 2019, I&apos;ve delivered tailored custom solutions working 1:1 with business professionals across Orange County.
         </p>
         <div className="mt-8 flex justify-center gap-4">
           <a href="#it-consulting">
@@ -145,13 +159,13 @@ export default function Home() {
         <div className="max-w-3xl mx-auto">
           <div className="bg-white rounded-lg p-6 shadow-md space-y-6 text-gray-700">
             <p>
-              Since 2019, I have been offering specialized technology consulting and marketing solutions tailored to business professionals across Orange County. Whether you need expert advice on tech upgrades, strategic digital marketing, or focused IT support, I&apos;m here to assist.
+              Since 2019, I have been offering specialized technology consulting and marketing solutions working 1:1 with business professionals across Orange County. Whether you need expert advice on tech upgrades, strategic digital marketing, or focused IT support, I&apos;m here to provide personalized assistance.
             </p>
             <p>
               With a solid background in Technology Solutions & Business Optimization, I&apos;ve worked with real estate agents, finance professionals, and business owners to drive success. By implementing innovative technology and strategic marketing campaigns, I&apos;ve boosted sales, improved productivity, and enhanced online presence. My expertise spans advanced IT solutions, SEO strategies, and social media marketing and advertising.
             </p>
             <p>
-              I&apos;m committed to delivering personalized, hands-on support throughout Orange County, ensuring your technology runs smoothly and your marketing strategies yield tangible results. In today’s competitive landscape, the right tech and marketing approach can make all the difference.
+              I&apos;m committed to delivering personalized, hands-on support working directly with clients throughout Orange County, ensuring your technology runs smoothly and your marketing strategies yield tangible results. In today's competitive landscape, the right tech and marketing approach can make all the difference.
             </p>
             <p className="text-center font-semibold text-lg">
               Empowering Your Business with Technology + Strategy
@@ -197,34 +211,21 @@ export default function Home() {
       {/* Section Separator */}
       <hr className="border-t border-gray-300 my-8" />
 
-      {/* Marketing & SEO Section */}
-      <section id="marketing-seo" className="py-20 px-6 bg-gray-50">
+      {/* Marketing Services Section */}
+      <section id="marketing" className="py-20 px-6 bg-gray-50">
         <motion.h2
           className="text-3xl font-semibold text-center mb-10"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Marketing & SEO
+          Marketing Services
         </motion.h2>
         <div className="max-w-4xl mx-auto">
           <Card>
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-2">Marketing & SEO</h3>
+              <h3 className="text-xl font-semibold mb-2">Marketing Services</h3>
               <p className="text-muted-foreground text-sm mb-2">Strategic Marketing & Design Solutions</p>
-                  <div>
-                    <h4 className="font-semibold mb-1">Search Engine Optimization (SEO)</h4>
-                    <ul className="list-disc list-inside space-y-2">
-                      <li>On-Page Optimization – Optimize meta tags, alt-text, headers, and content to improve website relevance</li>
-                      <li>Keyword Research and Strategy – Identify TOP keywords to target and develop a way to incorporate into content</li>
-                      <li>SEO Audit Report – Conduct a thorough audit of your website to identify areas of improvement and resolve issues affecting performance and search rankings</li>
-                      <li>Local SEO – Enhance your online presence for local search results, optimize reviews and Google Business information</li>
-                      <li>Technical SEO – Improve site speed, mobile compatibility, and fix crawl errors for better search performance</li>
-                      <li>Content Optimization – Refine content to meet SEO best practices, enhancing quality, relevance, and engagement</li>
-                      <li>Semrush audit reports for full in-depth website analysis</li>
-                      <li>Cloudflare SSL encryption for security</li>
-                    </ul>
-                  </div>
                   <div>
                     <h4 className="font-semibold mb-1">Tailored Social Media Marketing Solutions</h4>
                     <ul className="list-disc list-inside space-y-2">
@@ -270,6 +271,89 @@ export default function Home() {
                   <div>
                     <a href="#real-estate-flyers" className="text-blue-500">Real Estate marketing →</a>
                   </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+      {/* Section Separator */}
+      <hr className="border-t border-gray-300 my-8" />
+
+      {/* Web Development Section */}
+      <section id="web-development" className="py-20 px-6 bg-gray-50">
+        <motion.h2
+          className="text-3xl font-semibold text-center mb-10"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          Web Development
+        </motion.h2>
+        <div className="max-w-4xl mx-auto">
+          <Card>
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2">Custom Web Development & SEO</h3>
+              <p className="text-muted-foreground text-sm mb-4">Modern, responsive websites with comprehensive SEO built with cutting-edge technology</p>
+              
+              <div className="space-y-6">
+                <div>
+                  <h4 className="font-semibold mb-2">Website Development Services</h4>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>Custom Business Websites – Professional, mobile-responsive designs tailored to your brand</li>
+                    <li>Real Estate Agent Websites – Property showcases, lead capture forms, and featured listings</li>
+                    <li>Portfolio Websites – Showcase your work and services with stunning visual layouts</li>
+                    <li>E-commerce Solutions – Online stores with payment processing and inventory management</li>
+                    <li>Landing Pages – High-converting pages for marketing campaigns and lead generation</li>
+                    <li>Website Redesign & Modernization – Update existing sites with modern functionality</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold mb-2">Search Engine Optimization (SEO)</h4>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>On-Page Optimization – Optimize meta tags, alt-text, headers, and content to improve website relevance</li>
+                    <li>Keyword Research and Strategy – Identify TOP keywords to target and develop a way to incorporate into content</li>
+                    <li>SEO Audit Report – Conduct a thorough audit of your website to identify areas of improvement and resolve issues affecting performance and search rankings</li>
+                    <li>Local SEO – Enhance your online presence for local search results, optimize reviews and Google Business information</li>
+                    <li>Technical SEO – Improve site speed, mobile compatibility, and fix crawl errors for better search performance</li>
+                    <li>Content Optimization – Refine content to meet SEO best practices, enhancing quality, relevance, and engagement</li>
+                    <li>Semrush audit reports for full in-depth website analysis</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold mb-2">Technical Features & Security</h4>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>Mobile-First Responsive Design – Optimized for all devices and screen sizes</li>
+                    <li>Fast Loading Performance – Optimized for speed and user experience</li>
+                    <li>Contact Forms & Lead Capture – Secure forms with spam protection</li>
+                    <li>Content Management System (CMS) – Easy-to-update content for non-technical users</li>
+                    <li>Cloudflare SSL Encryption – Enterprise-grade security and SSL certificates</li>
+                    <li>Domain Registration & Management – Secure custom domains with professional setup</li>
+                    <li>Analytics Integration – Google Analytics and performance tracking setup</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold mb-2">Technology Stack & Deployment</h4>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>Next.js & React – Modern JavaScript frameworks for fast, interactive websites</li>
+                    <li>TypeScript & JavaScript – Type-safe development and dynamic functionality</li>
+                    <li>Python & Flask – Backend development for APIs and server-side applications</li>
+                    <li>MySQL Database – Robust data storage and management solutions</li>
+                    <li>Tailwind CSS – Beautiful, responsive styling and design systems</li>
+                    <li>Multiple Hosting Options – Vercel, Netlify, AWS, or custom hosting solutions</li>
+                    <li>CDN Integration – Global content delivery for optimal performance</li>
+                  </ul>
+                </div>
+
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2 text-blue-800">Custom Pricing</h4>
+                  <p className="text-sm text-blue-700">
+                    Web development projects are quoted based on complexity and requirements. 
+                    Contact me for a free consultation and custom quote tailored to your specific needs.
+                  </p>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </div>
