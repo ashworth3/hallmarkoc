@@ -73,11 +73,11 @@ export default function Home() {
             <a href="#it-consulting" className="hover:text-blue-600">
               IT Consulting
             </a>
-            <a href="#marketing" className="hover:text-blue-600">
-              Marketing
-            </a>
             <a href="#web-development" className="hover:text-blue-600">
               Web Development
+            </a>
+            <a href="#marketing" className="hover:text-blue-600">
+              Marketing
             </a>
             <a href="#real-estate-flyers" className="hover:text-blue-600">
               Flyers
@@ -97,11 +97,11 @@ export default function Home() {
               <a href="#it-consulting" className="hover:text-blue-600">
                 IT Consulting
               </a>
-              <a href="#marketing" className="hover:text-blue-600">
-                Marketing
-              </a>
               <a href="#web-development" className="hover:text-blue-600">
                 Web Development
+              </a>
+              <a href="#marketing" className="hover:text-blue-600">
+                Marketing
               </a>
               <a href="#real-estate-flyers" className="hover:text-blue-600">
                 Flyers
@@ -211,73 +211,6 @@ export default function Home() {
       {/* Section Separator */}
       <hr className="border-t border-gray-300 my-8" />
 
-      {/* Marketing Services Section */}
-      <section id="marketing" className="py-20 px-6 bg-gray-50">
-        <motion.h2
-          className="text-3xl font-semibold text-center mb-10"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          Marketing Services
-        </motion.h2>
-        <div className="max-w-4xl mx-auto">
-          <Card>
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-2">Marketing Services</h3>
-              <p className="text-muted-foreground text-sm mb-2">Strategic Marketing & Design Solutions</p>
-                  <div>
-                    <h4 className="font-semibold mb-1">Tailored Social Media Marketing Solutions</h4>
-                    <ul className="list-disc list-inside space-y-2">
-                      <li>Consulting & Strategy – Custom social media strategies aligned to your business goals</li>
-                      <li>Social Media Audit – Analyze engagement and insights to build a strong online presence</li>
-                      <li>Advertising Campaign – Manage Meta ads and paid social campaigns to drive targeted traffic</li>
-                      <li>Analytics & Account Growth – Performance analysis with actionable recommendations</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Email + SMS Digital Marketing</h4>
-                    <ul className="list-disc list-inside space-y-2">
-                      <li>Text Message Blast Service – Targeted SMS campaigns for immediate engagement</li>
-                      <li>Email Blast Service – Comprehensive email marketing to generate leads and boost visibility</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Custom Created Social Media Content</h4>
-                    <ul className="list-disc list-inside space-y-2">
-                      <li>Instagram/Facebook Post Templates – Visually appealing content for posts (Pricing: $35 per template)</li>
-                      <li>Listing Posts – Highlight new properties and attract buyers</li>
-                      <li>Open House Posts – Promote upcoming open houses</li>
-                      <li>Prospecting Buyers – Engage potential buyers with targeted content</li>
-                      <li>Self-Promotion – Showcase testimonials, achievements, and market expertise</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Social Media Story Templates</h4>
-                    <ul className="list-disc list-inside space-y-2">
-                      <li>Listing Stories – Feature new properties with engaging visuals (Pricing: $35 per template)</li>
-                      <li>Open House Stories – Remind followers about open houses</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Real Estate Flyers & Digital PDFs</h4>
-                    <ul className="list-disc list-inside space-y-2">
-                      <li>Open House Flyers – $35 Single-Sided / $45 Double-Sided</li>
-                      <li>New Listing Flyers – $35 Single-Sided / $45 Double-Sided</li>
-                      <li>Property Postcards (9&quot; x 6.5&quot;, 2-sided) – $35</li>
-                      <li>Social Media Digital Flyers – $35</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <a href="#real-estate-flyers" className="text-blue-500">Real Estate marketing →</a>
-                  </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-      {/* Section Separator */}
-      <hr className="border-t border-gray-300 my-8" />
-
       {/* Web Development Section */}
       <section id="web-development" className="py-20 px-6 bg-gray-50">
         <motion.h2
@@ -354,6 +287,73 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+      {/* Section Separator */}
+      <hr className="border-t border-gray-300 my-8" />
+
+      {/* Marketing Services Section */}
+      <section id="marketing" className="py-20 px-6 bg-gray-50">
+        <motion.h2
+          className="text-3xl font-semibold text-center mb-10"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          Marketing Services
+        </motion.h2>
+        <div className="max-w-4xl mx-auto">
+          <Card>
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2">Marketing Services</h3>
+              <p className="text-muted-foreground text-sm mb-2">Strategic Marketing & Design Solutions</p>
+                  <div>
+                    <h4 className="font-semibold mb-1">Tailored Social Media Marketing Solutions</h4>
+                    <ul className="list-disc list-inside space-y-2">
+                      <li>Consulting & Strategy – Custom social media strategies aligned to your business goals</li>
+                      <li>Social Media Audit – Analyze engagement and insights to build a strong online presence</li>
+                      <li>Advertising Campaign – Manage Meta ads and paid social campaigns to drive targeted traffic</li>
+                      <li>Analytics & Account Growth – Performance analysis with actionable recommendations</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-1">Email + SMS Digital Marketing</h4>
+                    <ul className="list-disc list-inside space-y-2">
+                      <li>Text Message Blast Service – Targeted SMS campaigns for immediate engagement</li>
+                      <li>Email Blast Service – Comprehensive email marketing to generate leads and boost visibility</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-1">Custom Created Social Media Content</h4>
+                    <ul className="list-disc list-inside space-y-2">
+                      <li>Instagram/Facebook Post Templates – Visually appealing content for posts (Pricing: $35 per template)</li>
+                      <li>Listing Posts – Highlight new properties and attract buyers</li>
+                      <li>Open House Posts – Promote upcoming open houses</li>
+                      <li>Prospecting Buyers – Engage potential buyers with targeted content</li>
+                      <li>Self-Promotion – Showcase testimonials, achievements, and market expertise</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-1">Social Media Story Templates</h4>
+                    <ul className="list-disc list-inside space-y-2">
+                      <li>Listing Stories – Feature new properties with engaging visuals (Pricing: $35 per template)</li>
+                      <li>Open House Stories – Remind followers about open houses</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-1">Real Estate Flyers & Digital PDFs</h4>
+                    <ul className="list-disc list-inside space-y-2">
+                      <li>Open House Flyers – $35 Single-Sided / $45 Double-Sided</li>
+                      <li>New Listing Flyers – $35 Single-Sided / $45 Double-Sided</li>
+                      <li>Property Postcards (9&quot; x 6.5&quot;, 2-sided) – $35</li>
+                      <li>Social Media Digital Flyers – $35</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <a href="#real-estate-flyers" className="text-blue-500">Real Estate marketing →</a>
+                  </div>
             </CardContent>
           </Card>
         </div>
