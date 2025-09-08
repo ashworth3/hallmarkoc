@@ -165,7 +165,7 @@ export default function Home() {
               With a solid background in Technology Solutions & Business Optimization, I&apos;ve worked with real estate agents, finance professionals, and business owners to drive success. By implementing innovative technology and strategic marketing campaigns, I&apos;ve boosted sales, improved productivity, and enhanced online presence. My expertise spans advanced IT solutions, SEO strategies, and social media marketing and advertising.
             </p>
             <p>
-              I&apos;m committed to delivering personalized, hands-on support working directly with clients throughout Orange County, ensuring your technology runs smoothly and your marketing strategies yield tangible results. In today's competitive landscape, the right tech and marketing approach can make all the difference.
+              I&apos;m committed to delivering personalized, hands-on support working directly with clients throughout Orange County, ensuring your technology runs smoothly and your marketing strategies yield tangible results. In today&apos;s competitive landscape, the right tech and marketing approach can make all the difference.
             </p>
             <p className="text-center font-semibold text-lg">
               Empowering Your Business with Technology + Strategy
