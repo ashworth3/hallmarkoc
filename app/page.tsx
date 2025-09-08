@@ -476,7 +476,7 @@ export default function Home() {
             rel="noopener noreferrer"
             aria-label="LinkedIn"
           >
-            <img
+            <Image
               src="https://skillicons.dev/icons?i=linkedin"
               alt="LinkedIn"
               width={24}
