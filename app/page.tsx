@@ -49,6 +49,9 @@ export default function Home() {
           <button
             className="md:hidden text-blue-600 focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle navigation menu"
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-menu"
           >
             <svg
               className="w-6 h-6"
@@ -89,7 +92,7 @@ export default function Home() {
         </div>
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white shadow-md">
+          <div id="mobile-menu" className="md:hidden bg-white shadow-md">
             <div className="flex flex-col space-y-4 px-6 py-4">
               <a href="#about" className="hover:text-blue-600">
                 About
